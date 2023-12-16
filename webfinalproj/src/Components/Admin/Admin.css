@@ -1,0 +1,114 @@
+/* Admin.css */
+
+.random-user-list-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  max-height: 1000px;
+  overflow-y: auto;
+  background-color: #e5dede;
+}
+
+.random-user-list-container h2 {
+  margin-bottom: 20px;
+}
+
+.random-list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.random-list-group-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 7px;
+  transition: box-shadow 0.3s ease-in-out;
+  background-color:#faf5f5 ;
+
+}
+
+.random-list-group-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.random-user-list-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: transform 0.3s ease-in-out;
+  background-color: grey;
+}
+
+.random-user-list-image:hover {
+  transform: scale(1.1);
+}
+
+.random-user-details {
+  flex-grow: 1;
+   /* Adjusted width for Name and Role section */
+  margin-left: 5%;
+  max-width: 400px;
+}
+
+.random-user-name {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.random-userrolessss {
+  font-size: 1rem;
+  color: black;
+}
+
+.random-user-email {
+ margin-left: 300px;
+ 
+ /* Adjusted width for Email section */
+}
+.user-list-random{
+  display: flex;
+  align-content: space-around;
+}
+
+.random-icon {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+.abcd{
+  margin-left: 25%;
+}
+.random-action-button {
+  font-size: 1rem;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 35%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: #eee6e6;
+}
+.random-action-button:hover {
+  background-color: #3498db; /* Light blue for View button */
+  color: #fff; /* Text color on hover */
+}
+
+.random-action-button.delete:hover {
+  background-color: #e74c3c; /* Red for Delete button */
+  color: #fff; /* Text color on hover */
+}
+
+/* Add any other specific styles if needed */

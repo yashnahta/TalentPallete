@@ -1,0 +1,133 @@
+/* Profession.css */
+/* General Styles */
+
+  
+
+  .ProfessionPage {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Category Buttons */
+  .category-buttons button {
+    background-color: #007bff;  /* Primary Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-buttons button:hover, .category-buttons button:focus {
+    background-color: #0056b3; /* Darker Blue */
+    transform: translateY(-2px); /* Slight lift */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  /* Job Listings */
+  .job-listings {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display three cards in a row */
+    grid-gap: 30px; /* Adjust the gap between cards */
+    justify-content: center;
+  }
+
+
+/* Job Card */
+.job-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px; /* Reduced from 15px */
+  padding: 20px; /* Reduced from 15px */
+  width: 300px; /* Reduced from 300px */
+  height: 280px; /* Reduced from 500px */
+  background-color: #f9f9f9;
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; /* Removed duplicate transition property */
+}
+
+
+
+.job-card img {
+  max-width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.job-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+
+.job-card h3{
+  font-weight: bold;
+  font-size: 1em;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+/* Display job title and description at the same height */
+ /* .job-card p {
+  color: #555;
+  font-size: 0.9em;
+  overflow-wrap: break-word;
+  text-align: center;
+} */
+
+.job-card:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  z-index: 10;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card.active { 
+  transform: scale(1.05); 
+  z-index: 10; 
+}
+
+.category-buttons button.active {
+  background-color: #0056b3; /* Active button background color */
+  color: white;
+  /* Add other styles for active state if needed */
+}
+.job-accepted {
+  background-color: #4caf50;
+  font-weight: bold;
+}
+
+.job-rejected {
+  background-color: #Ff5252;
+  font-weight: bold;
+}
+
+.job-not-reviewed {
+  background-color: #f9f9f9 ;
+  font-weight: bold
+}
+
+@media (max-width: 600px) {
+  .job-listings {
+    grid-template-columns: auto; 
+    align-items: center;
+  }
+
+  .job-card {
+    width: 100%; /* Make each card take full width */
+    max-width: 500px; /* Optional: Set a max-width if needed */
+    margin: 10px 0; /* Adjust margin for vertical layout */
+  }
+}

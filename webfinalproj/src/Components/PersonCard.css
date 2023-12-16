@@ -1,0 +1,77 @@
+:root {
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  --hover-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2) inset;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+ 
+  padding: 16px;
+  border: 0.1px solid #a5a5a5;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s ease-in-out;
+  max-width: 100%; /* Adjusted max-width */
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 20px;
+  max-height: 1000px; /* Set a max height for scrolling */
+  overflow: hidden;
+  background-color: white;
+
+  margin-top: 13px;
+}
+
+.person-card img {
+  width: 80px; /* Adjusted size */
+  height: 80px; /* Adjusted size */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px; /* Increased margin */
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+}
+
+.person-card img:hover {
+  transform: scale(1.1);
+}
+
+.person-details {
+  text-align: center;
+}
+
+.person-name {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem; /* Adjusted font size */
+  margin-bottom: 8px;
+ 
+}
+.person-email,
+.person-role {
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Adjusted font size */
+  margin-bottom: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  margin-top: 6px;
+  margin-right: 12px; /* Adjusted margin for better spacing */
+  font-size: 1.4rem; /* Adjusted icon size */
+}
+
+/* Common hover effect */
+.person-card:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+@media (max-width: 768px){
+  .person-card{
+    display: none;
+  }
+}

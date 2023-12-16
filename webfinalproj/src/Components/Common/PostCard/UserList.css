@@ -1,0 +1,142 @@
+/* UserList.css */
+
+.user-list-container {
+  border: 0.1px solid #a5a5a5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  width: 85%; /* Adjusted width */
+  margin-left: 0%; /* Adjusted margin */
+  margin-right: auto;
+  padding: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  max-height: 1000px; /* Set a max height for scrolling */
+  overflow-y: auto;
+  background-color: white;
+  scrollbar-width: thin;
+  scrollbar-color: #fdfdfd transparent;
+}
+
+.user-list-container {
+  /* ... (other styles) */
+  max-height: 1000px;
+  overflow-y: auto;
+}
+
+.list-group-item {
+  /* ... (other styles) */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.email {
+  /* ... (other styles) */
+  white-space: nowrap; /* Prevent email from wrapping to the next line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Display ellipsis (...) when text overflows */
+}
+.user-list-container h2 {
+  margin-bottom: 20px;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid #959595;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.list-group-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.user-list-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: transform 0.3s ease-in-out;
+  background-color: grey;
+}
+.user-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.user-list-container::-webkit-scrollbar-thumb {
+  background-color: #e9e9e9;
+  border-radius: 10px;
+}
+
+.user-list-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.user-list-image:hover {
+  transform: scale(1.1);
+}
+.user-details p {
+  text-transform: capitalize;
+}
+.user-details {
+  flex-grow: 1;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+.email {
+  margin-left: 4px;
+}
+
+.user-profile-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #c3bcbc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000;
+  opacity: 0;
+  transform-origin: top center;
+  transition: opacity 0.3s ease, transform 1s ease;
+}
+
+.user-profile-popup.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.action-button {
+  font-size: 1.2rem;
+  padding: 8px 16px;
+}

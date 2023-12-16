@@ -1,0 +1,97 @@
+/* CreateJobForm1.css */
+
+.create-job-container {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  height: 100%; /* Adjust the height as needed */
+  width: 35%;
+  margin-left: 33%;
+  margin-right: 0;
+  padding: 16px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 45px;
+  background-color: #fff;
+  
+}
+.jobs{
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 25px;
+  align-items: center;
+  padding: 8px; /* Adjust the padding as needed */
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  border: 0.5px solid;
+ 
+}
+.create-job-container.preview .jobscomp {
+  display: none;
+}
+.dropdownimg{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.jobsdes{
+  width: 90%;
+height: 120px;
+border: 0.5px solid;
+
+  align-items: center;
+  padding: 8px; /* Adjust the padding as needed */
+  margin-bottom: -5px; /* Adjust the margin as needed */
+  border-radius: 25px;
+
+}
+
+.h444{
+  text-align: center;
+}
+
+.btn123 {
+  cursor: pointer;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 12px 41px;
+  border-radius: 4px;
+  margin-right: 45px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 25px;
+
+  color: #000;
+
+}
+
+.create-job-container button:hover {
+  background-color: #0073b1;
+  color: #fff;
+}
+
+.create-job-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2) inset;
+}
+
+.create-job-container form {
+  /* Add form-specific styles here */
+}
+
+.create-job-container input {
+  /* Add input-specific styles here */
+}
+
+.create-job-container button {
+  /* Add button-specific styles here */
+}
+
+.post-button-icon {
+  /* Add specific styles for the post button icon */
+  size: 20px;
+}
+
+/* Add more styles as needed */

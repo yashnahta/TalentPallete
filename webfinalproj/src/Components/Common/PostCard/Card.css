@@ -1,0 +1,132 @@
+/* Card.css */
+
+.card {
+  border: 0.1px solid #a5a5a5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  height: 20%; 
+  width: 60%; 
+  margin-left: 33%;
+  margin-right: 0%;
+  padding: 16px;
+  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 20px;
+  background-color: #fff;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2) inset;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust the alignment as needed */
+  margin-bottom: 12px;
+}
+
+.profile-picture {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 12px;
+  transition: transform 0.3s ease-in-out;
+  background-color: #a49b9b;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.card-content {
+  margin-bottom: 16px;
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.menu-list {
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #fff;
+  
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s;
+}
+
+.menu-list li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.card-actions button {
+  cursor: pointer;
+  font-size: 1rem; /* Adjust the font size as needed */
+  border: none; /* Remove button border */
+  background-color: transparent; /* Make background transparent */
+  color: #000; /* Set button text color to black */
+  margin-right: 20px; /* Adjust the spacing between buttons */
+  display: flex;
+  align-items: center;
+  transition: color 1s;
+}
+
+.card-actions button:last-child {
+  margin-right: 0; /* Remove right margin for the last button */
+}
+
+.card-actions button .fa-icon {
+  margin-right: 8px; /* Adjust the spacing between icon and text */
+}
+
+@media (max-width: 768px){
+  .card{
+    width: 95%;
+    margin-left: 0%;
+margin-right: 0%;
+  }
+  .card-actions{
+    
+    
+    width: 50%;
+  
+  }
+}
+@media (max-width: 1024px){
+  .card{
+    width: 85%;
+   
+
+  }
+  .card-actions{
+    
+    
+    width: 50%;
+  
+  }
+}
+

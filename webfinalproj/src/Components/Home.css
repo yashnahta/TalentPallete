@@ -1,0 +1,37 @@
+.home-container {
+  display: flex;
+}
+
+.person-card-container,
+.main-content,
+.user-list {
+  padding: 16px;
+}
+
+.person-card-container {
+  width: 25%; /* Adjust the width as needed */
+}
+
+.main-content {
+  flex: 1;
+}
+
+.user-list {
+  width: 25%; /* Adjust the width as needed */
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Light gray background for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Dark gray scrollbar handle */
+  border-radius: 6px; /* Rounded corners for the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #adadad; /* Darker gray on hover */
+}

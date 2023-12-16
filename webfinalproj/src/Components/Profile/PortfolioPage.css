@@ -1,0 +1,366 @@
+/* Base styles */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+ /* body {
+  /* width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;  */
+  /* background: linear-gradient(135deg, #a777e3, #6e8efb, #a777e3); */
+
+  */
+
+/* Style the navbar */
+
+
+/* Profile page styles */
+.profile-page {
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #a777e3, #6e8efb, #a777e3);
+}
+
+.profile-page .profile-header {
+  position: relative;
+  text-align: center; /* Center-align the header contents */
+
+}
+.profile-page .cover-photo {
+  width: 100%;
+  height: 550px; /* Adjusted for a smaller cover photo height */
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px; /* Space below the navbar */
+}
+
+.profile-page .profile-image-container {
+  position: absolute;
+  bottom: -75px; /* Adjust this value to position the image correctly over the cover photo */
+  transform: translateX(-50%);
+  left: 100px;
+  border-radius: 50%;
+  border: 4px solid white; /* Adjust border size as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  background: white;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.profile-page .profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+  
+
+.edit-profile-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+  background-color: #3f51b5;
+}
+
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+/* Profile details */
+.profile-details {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* Adjusted space to account for negative margin above */
+}
+
+/* Sections styling */
+/* ... (rest of your existing styles) */
+
+/* Common styles for all sections */
+.section {
+  background: rgb(116, 116, 236);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for sections */
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.section h2 {
+  color: #333;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #eaeaea;
+  font-size: 22px;
+}
+
+/* Paragraph styles */
+.section p {
+  color: black;
+  line-height: 1.6;
+  margin-top: 1em;
+}
+
+/* Lists for skills, possibly comma-separated */
+.section .skills-list {
+  padding: 0;
+  list-style: none; /* Removes default list styles */
+  display: flex; /* Displays list items in a row */
+  flex-wrap: wrap; /* Allows items to wrap to new lines */
+  gap: 10px; /* Spacing between items */
+}
+
+.section .skills-list li {
+  background: #eaeaea;
+  color: #333;
+  padding: 5px 15px;
+  border-radius: 20px; /* Rounded corners for skill tags */
+  font-weight: bold;
+}
+
+/* ... (rest of your existing styles) */
+
+
+/* Editable text areas */
+.profile-page input[type="text"],
+.profile-page textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  resize: none;
+}
+
+.profile-page-page input[type="text"]:focus,
+.profile-page textarea:focus {
+  border-color: #5c6bc0;
+  box-shadow: 0 0 0 2px rgba(92, 107, 192, 0.5);
+}
+
+
+.save-btn, .cancel-btn {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Adds space to the right of the button */
+}
+.save-btn {
+  background-color: #66bb6a;
+}
+
+.save-btn:hover {
+  background-color: #4caf50;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Animation for the greeting */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text h2 {
+  animation: fadeIn 5s ease-out forwards;
+}
+
+/* Posts section */
+.posts-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .posts-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .posts-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ... (other styles) */
+
+
+
+.profile-page .posts-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 posts per row for larger screens */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px; /* Space from top content */
+}
+
+/* Grid item adjustments */
+.profile-page .card {
+  height: auto; /* Height should be auto for grid items */
+  width: 100%; /* Width should be 100% to fill the grid column */
+  margin-left: 0; /* Remove left margin */
+  margin-right: 0; /* Remove right margin */
+  overflow: hidden; 
+  /* Keep the rest of your .card styles from Card.css */
+}
+
+
+.profile-page .menu-icon {
+  display: none;
+}
+
+
+
+.profile-page .card-content {
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  white-space: normal; /* Ensure the text wraps */
+  overflow: auto; /* Add scrollbars if content is too long */
+  max-height: 50px; /* Adjust based on your design */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* If you have images or other media in your cards, ensure they fit */
+
+
+/* Adjust the card header if it has overflowing content */
+.profile-page .posts-section .card .card-actions {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show the like, comment, share options on hover */
+/* Hover effect scoped to the posts-section */
+.posts-section .card:hover .card-actions {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-page .cover-photo {
+    height: 200px; /* Smaller height on smaller screens */
+  }
+
+ 
+
+  .card-content {
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Ensure the text wraps */
+    overflow: hidden; /* Hide the overflow */
+  }
+
+  .profile-page .card-content {
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Ensure the text wraps */
+    overflow: auto; /* Add scrollbars if content is too long */
+    max-height: 50px; /* Adjust based on your design */
+    padding: 10px; /* Adjust padding as needed */
+  }
+  .profile-page .posts-section {
+    grid-template-columns: 1fr;
+  }
+
+
+  .profile-page .card-content {
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Ensure the text wraps */
+    overflow: auto; /* Add scrollbars if content is too long */
+    max-height: 50px; /* Adjust based on your design */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+
+
+.profile-page .section p {
+  overflow: hidden;
+  word-break: break-word;
+
+}
+
+}
+
+.upload-button {
+  cursor: pointer;
+  background-color: #5c6bc0; /* Your desired background color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 10px; /* Space between buttons */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+.upload-button:hover {
+  background-color: #3f51b5; /* Darker shade for hover state */
+}
+
+.upload-container h6 {
+  margin-bottom: 10px; /* Space between the heading and the button */
+  /* Align the text to the left */
+}
+
+.upload-container {
+  margin-bottom: 20px; /* Space below the button for separation */
+  text-align: left;
+  padding: 10px;
+}
+.upload-widget-container {
+  margin-bottom: 20px; /* Space below the button for separation */
+  text-align: left;
+ padding: 10px;
+}

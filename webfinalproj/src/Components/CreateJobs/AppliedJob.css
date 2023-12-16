@@ -1,0 +1,112 @@
+/* AppliedJob.css */
+
+.random-container {
+  display: flex;
+}
+
+/* Left side: List of users */
+.random-list {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.random-list h2 {
+  margin-bottom: 10px;
+}
+
+.random-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.random-list li {
+  list-style-type: none;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.random-list li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style for buttons */
+.random-accept-button,
+.random-reject-button {
+  padding: 10px 15px;
+  background-color: #c6c8ca;
+  color: #101010;
+  border: none;
+  cursor: pointer;
+  width: 12%;
+  border-radius: 50%;
+}
+
+.random-accept-button {
+  margin-left: 49%;
+}
+
+.random-reject-button {
+  margin-right: 10%;
+  margin-left: 10px;
+}
+
+.random-accept-button:hover,
+.random-reject-button:hover {
+  background-color: #005684;
+}
+
+/* Right side: Job details */
+.random-details-container {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.random-details {
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: rgb(159, 154, 154);
+}
+
+.random-details h2 {
+  margin-bottom: 10px;
+}
+
+.random-details p {
+  margin-bottom: 15px;
+}
+
+/* Adjustments for the user profile image */
+.user1-profile-img {
+  width: 13%;
+  height: 12%;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Adjustments for the space between name and buttons */
+.random-button-container {
+  display: flex;
+  gap: 25px;
+}
+
+.random-list-item.accepted {
+  background-color: #4caf50;
+}
+
+.random-list-item.rejected {
+  background-color: #ff5252;
+}
